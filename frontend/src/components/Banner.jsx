@@ -33,7 +33,7 @@ const Banner = () => {
         </div>
         <div className=" order-1 w-full md:w-1/2">
         
-            <img src="Banner.jpg" className="h-92 w-92"  alt="" />
+            <img src="Banner-removebg.png" className="h-92 w-92"  alt="" />
         </div>
       </div>
     </>

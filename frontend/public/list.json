@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "name": "Recipe Book",
+      "name": "Biography",
       "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 100,
       "category": "Cookbooks",
@@ -33,7 +33,7 @@
     },
     {
       "id": 5,
-      "name": "Art Book",
+      "name": "Horror fiction Book",
      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 150,
       "category": "Art",
@@ -65,7 +65,7 @@
     },
     {
       "id": 9,
-      "name": "Biography",
+      "name": "Recipe Book",
       "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 180,
       "category": "Biography",
@@ -76,7 +76,7 @@
       "name": "Self-Help Book",
       "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 220,
-      "category": "Self-Help",
+      "category": "Self",
       "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1721977605~exp=1721981205~hmac=baf73252893045bb5474e2a73e588c3fececcb6fcba6d667896aaab695a23ff4&w=740"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "id": 12,
-      "name": "Travel Guide",
+      "name": "Traveler Guide",
       "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 0,
       "category": "Free",
