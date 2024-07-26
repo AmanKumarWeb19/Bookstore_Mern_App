@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Login from "./Login";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -96,7 +97,7 @@ const Navbar = () => {
               <label className="px-3 py-2 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow outline-none"
+                  className="grow outline-none dark:bg-slate-900 dark:text-white"
                   placeholder="Search"
                 />
                 <svg
@@ -143,9 +144,11 @@ const Navbar = () => {
               </svg>
             </label>
             <div className="">
-              <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">
+              <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+              onClick={()=>document.getElementById("my_modal_3").showModal()}>
                 Login
               </a>
+              <Login/>
             </div>
           </div>
         </div>
