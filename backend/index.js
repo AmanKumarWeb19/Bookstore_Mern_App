@@ -3,8 +3,10 @@ import dotenv from "dotenv"
 import cors from "cors"
 import connection from "./config/db.js"
 import BookRouter from "./routes/book.route.js"
+import UserRouter from "./routes/user.route.js"
 const app = express();
 app.use(cors())
+app.use(express.json())
 
 dotenv.config()
 
@@ -12,6 +14,7 @@ const PORT = process.env.PORT || 4000;
 
 // defining Routes:-
 app.use("/book",BookRouter)
+app.use("/user",UserRouter)
 
 app.listen(PORT, async () => {
   try {

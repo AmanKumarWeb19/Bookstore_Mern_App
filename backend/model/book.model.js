@@ -6,6 +6,8 @@ const bookStoreSchema=mongoose.Schema({
     category:String,
     image:String,
     title:String
+},{
+    versionKey:false
 })
 
 const BookModel=mongoose.model("Book",bookStoreSchema)
