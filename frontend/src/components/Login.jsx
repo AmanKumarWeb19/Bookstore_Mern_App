@@ -74,7 +74,6 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-
 const Login = () => {
   const {
     register,
@@ -93,14 +92,19 @@ const Login = () => {
         console.log(res.data);
         if (res.data) {
           toast.success("Login Successful!");
+          document.getElementById("my_modal_3").close();
+
+          setTimeout(() => {
+            window.location.reload();
+            localStorage.setItem("Users", JSON.stringify(res.data.user));
+          }, 1000);
         }
-        localStorage.setItem("Users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
           console.log(err);
           toast.error("error:-" + err.response.data.message);
-     
+          setTimeout(() => {}, 2000);
         }
       });
   };
@@ -110,8 +114,10 @@ const Login = () => {
         <div className="modal-box">
           <form onSubmit={handleSubmit(onSubmit)} method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <Link to="/"
+            <Link
+              to="/"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              onClick={() => document.getElementById("my_modal_3").close()}
             >
               ✕
             </Link>
