@@ -60,7 +60,7 @@ const SignUp = () => {
                 <input
                   type="text"
                   placeholder="Enter Your Name"
-                  className="w-80 px-3 py-1 rounded-md outline:none"
+                  className="w-80 px-3 py-1 border rounded-md outline:none"
                   {...register("fullname", { required: true })}
                 />
                 <br />
@@ -77,7 +77,7 @@ const SignUp = () => {
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="w-80 px-3 py-1 rounded-md outline:none"
+                  className="w-80 px-3 py-1 border  rounded-md outline:none"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -94,7 +94,7 @@ const SignUp = () => {
                 <input
                   type="password"
                   placeholder="Enter Your Password"
-                  className="w-80 px-3 py-1 rounded-md outline:none"
+                  className="w-80 px-3 py-1 border  rounded-md outline:none"
                   {...register("password", { required: true })}
                 />
                 <br />
