@@ -22,7 +22,7 @@ app.listen(PORT, async () => {
     console.log("Connected to MongoDb");
   } catch (error) {
     console.log("Not Connected to MongoDb");
-    console.log({" msg": "error.message "});
+    console.log({" msg": error.message});
   }
   console.log(`Server is listening on port ${PORT}`);
 });
